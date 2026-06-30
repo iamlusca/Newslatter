@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid grey; */
+    box-sizing: border-box;
+}
+
+body { /*básico */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background: gainsboro;
+    border: 1px solid black;
+    /*grid*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "principal menu-lateral"
+    "rodape rodape";
+    gap: 20px;
+    /* parametro de distribuição de margens e bordas*/
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho { grid-area: cabecalho;}
+.principal {grid-area: principal;}
+.menu-lateral {grid-area: menu-lateral;}
+.rodape {grid-area: rodape;}
+
+.cabecalho {
+    border-bottom: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navegacao {
+    display: flex;
+    gap: 22px;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.navegacao a:hover{
+    color: tomato;
+}
+/*Noticia destaque*/
+.destaque {
+    background-color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.destaque h1 {
+
+    font-size: 30px;
+    margin: 10px 0;    
+}
+
+.resumo {
+    color: grey;
+    font-size: 17px;
+}
+
+.categoria {
+    display: inline-block;
+    background-color: tomato;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+/*Gride de noticias*/
+.grade-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.cartao {
+    background-color: white;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.cartao h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.cartao p {
+    font-size: 15px;
+    color: grey;
+}
+
+/* Barra lateral*/
+.menu-lateral {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-lateral h3 {
+    border-bottom: 2px solid tomato;
+    padding-bottom: 8px ;
+    margin-bottom: 12px;
+}
+
+.menu-lateral ol {
+    padding-left: 20px;
+}
+
+.menu-lateral li {
+    margin-bottom: 12px ;
+    font-size: 15px;
+}
+
+.rodape {
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "menu-lateral"
+        "rodape";
+    }
+}
+
+.cabecalho {
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+
