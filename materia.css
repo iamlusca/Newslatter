@@ -290,3 +290,57 @@ body {
     font-size: 17px;
     margin-top: 10px;
 }
+
+/* Rodapé */
+.rodape {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--cor-texto);
+    color: #fff;
+    padding: 32px;
+    border-radius: var(--raio);
+    margin-bottom: 24px;
+    font-family: var(--fonte-ui);
+    font-size: 14px;
+}
+
+.rodape h4 {
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.rodape a:hover {
+    color: #fff;
+}
+
+@media (max-width: 820px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-lateral {
+        position: static;
+    }
+
+    .materia h1 {
+        font-size: 28px;
+    }
+
+    .rodape {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
