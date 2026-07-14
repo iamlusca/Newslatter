@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarim Diário</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
+
+     <style>
+        /* Exemplo de espaçamento entre os artigos */
+        .grade-noticias {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* espaço entre os artigos */
+        }
+
+        .cartao {
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        .destaque {
+            margin-bottom: 30px;
+            /* espaço abaixo do artigo destaque */
+            padding: 15px;
+            border: 1px solid #999;
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <site-header></site-header>
+
+    <div class="conteudo">
+        
+
+    <main class="principal">
+        <article class="cartao card--destaque">
+            <span class="categoria">Spider-Man</span>
+            <h1 class="cartao__titulo">Spider-Man é visto com Sandman!</h1>
+
+            <p class="cartao__resumo">
+                Homem-Aranha é visto com seus comparsas, o outro Homem-Aranha e Sandman, em frente à torre Fisk,
+                planejando novo ataque a Nova York.
+            </p>
+        </article>
+
+        <section class="grade-noticias">
+            <news-card 
+            categoria="Economia" 
+            titulo="Rio Morales, mãe de Miles Morales"
+            resumo="Rio Morales propõe que os cidadãos ajudem o centro de reabilitação e acolhimento F.E.A.S.T., que era administrado pela falecida May Parker, tia de Peter Parker, o Homem-Aranha.">
+            </news-card>
+
+            <news-card 
+            categoria="Esportes" 
+            titulo="New York Cats"
+            resumo=" Com campeonato regional chegando ao fim, New York Cats está próximo de ser campeão após uma briga acirrada pelo título.">
+            </news-card>
+
+            <news-card 
+            categoria="Política" 
+            titulo="Wilson Fisk"
+            resumo="Mesmo preso, Wilson Fisk tem comandado sua gangue de dentro da Balsa e realizando uma campanha política para se candidatar a presidente.">
+            </news-card>
+        </section>
+    </main>
+
+    <aside class="menu-lateral">
+
+        <div class="caixa">
+            <h3>Mais lidas</h3>
+            <ol>
+                <li>O que muda agora que todos sabem que os Spider-Mans são Peter Parker e Miles Morales?</li>
+                <li>Black Cat e Spider-Man são vistos em terraço juntos</li>
+                <li>Peter Parker e Miles Morales são presos por envolvimento no crime organizado</li>
+                <li>J. J. Jameson recebe a chave da cidade por sempre ter denunciado os crimes dos Spider-Mans</li>
+            </ol>
+    </aside>
+</div>
+
+    <site-footer></site-footer>
+</body>
+
+</html>

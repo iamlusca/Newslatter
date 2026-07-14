@@ -1,0 +1,14 @@
+:root {
+    --cor-destaque: red;
+    --cor-texto: black;
+    --cor-suave: grey;
+    --cor-fundo: #eee;
+    --cor-card: rgb(221, 223, 223);
+
+
+    --fonte-corpo: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fonte-ui: Arial, Helvetica, sans-serif;
+    
+
+    --raio: 8px;
+}

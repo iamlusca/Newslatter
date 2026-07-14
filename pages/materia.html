@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spider-mans são presos a mando de Wilson Fisk</title>
-    <link rel="stylesheet" href="materia.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/components/site-header.js" defer></script>
+    <script src="../js/components/news-card.js" defer></script>
+    <script src="../js/components/site-footer.js" defer></script>
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="index.html" class="logo">Clarim Diario</a>
-        <nav class="navegacao">
-            <a href="#">Segurança</a>
-            <a href="#">Economia</a>
-            <a href="#">Esportes</a>
-            <a href="#">Policial</a>
-        </nav>
-    </header>
+
+    <site-header></site-header>
 
     <nav class="trilha">
         <a href="index.html">Inicio</a>
@@ -40,8 +36,8 @@
                     <span class="data">01 de julho de 2026 - 5 minutos de leitura</span>
                 </div>
                 <div class="compartilhar">
-                    <button>Compartilhar</button>
-                    <button>Salvar</button>
+                    <button class="btn btn-primary">Compartilhar</button>
+                    <button class="btn btn-primary">Salvar</button>
                 </div>
             </div>
             <div class="texto">
@@ -61,7 +57,7 @@
                 <a href="#">Inocentes?</a>
             </div>
            <figure class="imagem-destaque">
-            <img src="FotoDaMateria.png" alt="Spider-mans sendo presos">
+            <img src="../assets/images/FotoDaMateria.png" alt="Spider-mans sendo presos">
             <figcaption>Peter Parker e Miles Morales presos.</figcaption>
         </article>
         </figure>
@@ -76,12 +72,12 @@
                 </ol>
             </div>
 
-            <div class="caixa-newsletter">
+            <div class=".caixa-newsletter">
                 <h3>Receba as noticias</h3>
                 <p>Assine nosso boletim diário</p>
                 <input type="Email"
                 placeholder="seu@email.com">
-                <button>Assinar</button>
+                <button class="btn btn-primary">Assinar</button>
             </div>
         </aside>
     </div>
@@ -89,43 +85,21 @@
     <section class="relacionados">
         <h2>Leia também</h2>
         <div class="grade">
-            <article class="cartao">
-                <span class="categoria">Segurança</span>
-                <h3>Mistério em Nova York: avistamentos de simbionte voltam a preocupar autoridades.</h3>
-            </article>
+         <news-card categoria="Segurança" 
+         titulo="Rio Morales, mãe de Miles Morales" resumo="Rio Morales propõe que os cidadãos ajudem o centro de reabilitação e acolhimento F.E.A.S.T., que era administrado pela falecida May Parker, tia de Peter Parker, o Homem-Aranha."
+        </news-card>
 
-            <article class="cartao">
-                <span class="categoria">Economia</span>
-                <h3>Oscorp anuncia novo investimento em tecnologia urbana e movimenta o mercado financeiro.</h3>
-            </article>
+            <news-card 
+            categoria="Esportes" 
+            titulo="New York Cats" 
+            resumo=" Com campeonato regional chegando ao fim, New York Cats está próximo de ser campeão após uma briga acirrada pelo título.</news-card>
 
-            <article class="cartao">
-                <span class="categoria">Esportes</span>
-                <h3>Temporada escolar de esportes começa com reforço na segurança após recentes incidentes em Manhattan.</h3>
-            </article>
+            <news-card 
+            categoria="Política" 
+            titulo="Wilson Fisk" 
+            resumo="Mesmo preso, Wilson Fisk tem comandado sua gangue de dentro da Balsa e realizando uma campanha política para se candidatar a presidente."</news-card>
         </div>
     </section>
-    <footer class="rodape">
-        <div class="coluna">
-            <h4><strong>Clarim Diario</strong></h4>
-            <p>Alta Credibilidade, Dirigido por J. Jonah Jameson</p>
-        </div>
-
-        <div class="coluna">
-            <h4>Editoriais</h4>
-          <a href="#">Segurança</a>
-          <a href="#">Economia</a>
-          <a href="#">Esportes</a>
-          <a href="#">Policial</a>
-        </div>
-
-        <div class="coluna">
-            <h4>Institucional</h4>
-          <a href="#">Termos de Uso</a>
-          <a href="#">Institucional</a>
-          <a href="#">Quem Somos</a>
-          <a href="#">Contato</a>
-        </div>
-    </footer>
+    <site-footer></site-footer>
 </body>
 </html>
