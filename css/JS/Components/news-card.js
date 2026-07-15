@@ -1,5 +1,3 @@
-console.log("ESTOU NO NEWS-CARD NOVO");
-
 class NewsCard extends HTMLElement {
     connectedCallback() {
         const categoria = this.getAttribute("categoria") || "";
