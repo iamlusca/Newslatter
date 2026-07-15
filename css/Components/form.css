@@ -1,7 +1,6 @@
-.auth { 
-    display: flex; 
-    justify-content: 
-    center; 
+.auth {
+    display: flex;
+    justify-content: center;
     padding: 40px 0;
 }
 
@@ -26,14 +25,15 @@
     font-family: var(--fonte-ui);
     font-size: 15px;
     padding: 10px;
-    border: 1px solid var(--cor-suave);
+    border: 1px solid var(--cor-texto);
     border-radius: var(--raio);
 }
 
-.formulario input:focus {
+.formulario input:focus{
     outline: none;
-    border-color: var(--cor-destaque);
+    border-color: var(--cor-texto);
 }
+
 
 .linha {
     display: flex;
