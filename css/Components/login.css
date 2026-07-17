@@ -1,0 +1,48 @@
+.principal-form {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.form {
+    background-color: var(--cor-card);
+    padding: 32px;
+    width: 100%;
+    max-width: 440px;
+    border-radius: var(--raio);
+}
+
+.form label {
+    font-size: 15px;
+    margin: 14px 0 4px;
+    display: block;
+}
+
+.form input{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: var(--raio);
+}
+
+.rodapeform {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: var(--raio);
+    cursor: pointer;
+    background-color: var(--cor-destaque);
+    color: #ffff;
+}
+
+.form input:focus{
+    outline: none;
+    border-color: var(--cor-destaque);
+}
