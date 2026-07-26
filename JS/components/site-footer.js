@@ -12,7 +12,7 @@ class SiteFooter extends HTMLElement {
                     <a href="#">Segurança</a>
                     <a href="#">Economia</a>
                     <a href="#">Esportes</a>
-                    <a href="#">Policial</a>
+                    <a href="../pages/materia.html">Policial</a>
                 </div>
 
                 <div class="coluna">

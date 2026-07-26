@@ -9,8 +9,8 @@
 @import "Components/button.css";
 @import "components/tags.css";
 @import "components/box.css";
-@import "components/form.css";
+@import "cadastro.css";
+@import "login.css";
 
-@import "../css/materia.css";
 
-@import url("./components/login.css");
+@import "materia.css";

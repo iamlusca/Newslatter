@@ -1,6 +1,6 @@
 .conteudo {
     display: grid;
-    grid-template-columns:  2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 32px;
     align-items: start;
     padding: 8px 0 40px;
@@ -28,11 +28,11 @@
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "cabecalho"
-        "principal"
-        "menu-lateral"
-        "rodape";
+        grid-template-areas:
+            "cabecalho"
+            "principal"
+            "menu-lateral"
+            "rodape";
     }
 }
 
@@ -56,6 +56,28 @@
     .cabecalho {
         flex-direction: column;
         gap: 10px;
-        
+
     }
+}
+
+/* Exemplo de espaçamento entre os artigos */
+.grade-noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* espaço entre os artigos */
+}
+
+.cartao {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.destaque {
+    margin-bottom: 30px;
+    /* espaço abaixo do artigo destaque */
+    padding: 15px;
+    border: 1px solid #999;
+    background-color: #eee;
 }

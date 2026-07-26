@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Clarim Diário</title>
 
-    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../css/main.css">
 
-    <script src="../../components/site-header.js"></script>
-    <script src="../../components/site-footer.js"></script>
-    <script type="module" src="../pages/login.js"></script>
+    <script src="../JS/components/site-header.js" defer></script>
+    <script src="../JS//components/site-footer.js" defer></script>
 </head>
+
 <body>
     <site-header></site-header>
     <main class="principal-form">
@@ -20,15 +21,17 @@
             <input type="email" name="email" id="email" required>
 
             <label for="senha">Senha</label>
-            <input type= "password" name="senha" id="senha" required>
+            <input type="password" name="senha" id="senha" required>
 
             <p id="aviso"></p>
 
             <button type="submit" class="btn">Entrar</button>
 
-            <p class="rodapeform">Não tem conta? <a href="../pages/cadastro.html">Cadastre-se</a></p>
+            <p class="rodapeform">Não tem conta? <a href="./cadastro.html">Cadastre-se</a></p>
         </form>
-    </main>     
-     <site-footer></site-footer>
+    </main>
+    <script type="module" src="../JS/login.js"></script>
 </body>
+</body>
+
 </html>

@@ -17,6 +17,18 @@
     text-decoration: none;
 }
 
+.logo a {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.logo a:hover, .logo a:visited {
+    color: var(--cor-texto);
+}
+
+
 .navegacao {
     display: flex;
     gap: 20px;
